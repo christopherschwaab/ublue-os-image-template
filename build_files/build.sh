@@ -11,6 +11,8 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux  emacs strace
+dnf5 copr enable lizardbyte/stable
+dnf5 install -y Sunshine
 
 # Use a COPR Example:
 #
